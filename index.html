@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Powerful Sports Center</title>
+    <meta name="description" content="Powerful Sports Center. Classes, Trainers, Contact, Join Us">
+    <link href="vendor/aos/aos.css" rel="stylesheet">
+    <link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+<header id="header" class="fixed-top">
+    <div class="container">
+        <div class="logo">
+            <img src="images/logo.png" alt="Sport Center Logo">
+    </div>
+    <nav id="navbar" class="navbar">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Classes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Trainers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Review</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+              <li class="nav-item-join">
+                <a class="nav-link" href="#">JOIN US</a>
+              </li>
+              </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+      </header>
+      <section id="hero" class="hero-section">
+        <div class="container">
+          <a href="#section1" class="btn btn-primary top-btn">POWERFULL</a>
+            <h1>Group</h1>
+            <h1>Practice</h1>
+            <h1>With Trainer</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              Necessitatibus odit aut iste. Velit porro rerum, unde modi ipsam exercitationem laudantium illum. 
+              Id, laborum? Totam, dicta nisi. Voluptates, vero id. Perferendis.</p>
+            <a href="#section1" class="btn btn-primary">Sign Up</a>
+            <a href="#section1" class="btn btn-primary secondary-btn">Details</a>
+        </div>
+      </section>
+      <div id ="hero-mid" class="hero-mid-container">
+        <div class="row">
+            <div class="col-md-3 mb-3">
+                <div class="box">
+                 <span class="line1">325</span><br>
+                 <span class="line2">Courses</span>
+                </div>
+            </div>
+            <div class="col-md-3 mb-3">
+                <div class="box">
+                  <span class="line1">405</span><br>
+                  <span class="line2">Workouts</span>
+                </div>
+            </div>
+            <div class="col-md-3 mb-3">
+                <div class="box">
+                  305<br>Working Hours</div>
+            </div>
+            <div class="col-md-3 mb-3">
+                <div class="box">
+                  705<br>Happy Clients</div>
+            </div>
+        </div>
+    </div>  
+    <section id="class" class="class-section">
+      <div class="container">
+          <h1>OUR CLASSES</h1>
+          <div id="rectangle"></div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>
+            Voluptates, vero id. Perferendis.</p>
+          <div class="button-container">
+          <a href="#section1" class="btn btn-primary" id ="yogaBtn" onclick="yogaImage()">Yoga</a>
+          <a href="#section1" class="btn btn-primary" id ="groupBtn" onclick="groupImage()">Group</a>
+          <a href="#section1" class="btn btn-primary" id ="soloBtn" onclick="soloImage()">Solo</a>
+          <a href="#section1" class="btn btn-primary" id ="stretchBtn" onclick="strechImage()">Stretching</a>
+      </div>
+      <div class="container section-content">
+        <div class="row">
+            <div class="col-md-6">
+              <h2>Lorem ipsum, dolor sit amet consectetur adipisicing?
+              </h2>
+              <p2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                  Sed pulvinar est nec pretium maximus. Sed vehicula, nisi sit amet 
+                  dapibus facilisis, leo justo semper odio, vel hendrerit tellus mi non 
+                  lorem. Curabitur ullamcorper felis a quam facilisis, in cursus enim fringilla.</p2>
+              <h2>Lorem ipsum, dolor sit amet consectetur adipisicing?
+              </h2>
+              <p2>Integer nec sapien nec justo gravida tristique. Maecenas viverra lorem eget
+                   tortor volutpat hendrerit. Morbi sed leo magna. Cras nec sem non orci sollicitudin
+                    dictum. Proin mattis euismod justo ac fringilla. Mauris ullamcorper mauris nec
+                     lectus hendrerit varius.</p2>
+            </div>
+            <div class="col-md-6">
+                <img src="/images/yoga.jpg" width=500px length=500px alt="Yoga Image" id ="currentImg" class="center">
+            </div>
+        </div>
+    </div>
+  </section>
+  <div id="bim" class="bim-section">
+    <div class="container">
+      <h2>BMI Calculator</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar est nec pretium maximus. Sed vehicula, nisi sit amet dapibus facilisis, leo justo semper odio, vel hendrerit tellus mi non lorem. Curabitur ullamcorper felis a quam facilisis, in cursus enim fringilla.</p>
+                <p>Integer nec sapien nec justo gravida tristique. Maecenas viverra lorem eget tortor volutpat hendrerit. Morbi sed leo magna. Cras nec sem non orci sollicitudin dictum. Proin mattis euismod justo ac fringilla. Mauris ullamcorper mauris nec lectus hendrerit varius.</p>
+                <div class="row">
+                  <div class="col-md-4">
+                      <div class="form-group">
+                          <label for="weight">Weight (kg):</label>
+                          <input type="number" class="form-control" id="weight" placeholder="Weight in kg">
+                      </div>
+                  </div>
+                  <div class="col-md-4">
+                      <div class="form-group">
+                          <label for="height">Height (m):</label>
+                          <input type="number" class="form-control" id="height" placeholder="Height in meters">
+                      </div>
+                  </div>
+                  <div class="col-md-4">
+                    <button class="btn btn-primary" onclick="calculateBMI()">Calculate BMI</button>
+                </div>
+              </div>
+            
+          </div>
+            <div class="col-md-6">
+              <h3>Your BMI</h3>
+                <img src="/images/bmi-index.jpg" width=500px length=500px alt="BMI Image" id="bmi-image" class="center">
+                <div class="triangle" id="triangle"></div>
+                <div class="result" id="bmiResult"></div>
+            </div>
+            
+        </div>
+    </div>
+    <section id="trainers" class="trainer-section">
+      <div class="container">
+          <h1>OUR BEST TRAINERS</h1>
+          <div id="rectangle"></div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>
+            Voluptates, vero id. Perferendis.</p>
+      <div class="container section-content">
+        <div class="row">
+            <div class="col-md-4">
+              <img src="/images/trainer1.jpg" style="border-style: solid; border-radius: 6px; border-color: orange; border-width: 3px;" alt="Trainer 1" id ="trainer-1">
+            </div>
+            <div class="col-md-4">
+                <img src="/images/trainer2.jpg" style="border-style: solid; border-radius: 6px; border-color: orange; border-width: 3px;"  alt="Trainer-2" id ="trainer-2">
+            </div>
+            <div class="col-md-4">
+              <img src="/images/trainer3.jpg" style="border-style: solid; border-radius: 6px; border-color: orange; border-width: 3px;" alt="Trainer-3" id ="trainer-3">
+            </div>
+        </div>
+    </div>
+  </section>
+  <section id="purchase" class="purchase-section">
+    <div class="container">
+        <h1>PURCHASE FROM US</h1>
+        <div id="rectangle"></div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>
+          Voluptates, vero id. Perferendis.</p>
+    <div class="container section-content">
+      <div class="row">
+          <div class="col-md-3">
+            <img src="/images/purchase1.jpg"  alt="Purchase 1" id ="purchase-1">
+            <div class="column">Column 1</div>
+            <div class="column">Column 2</div>
+            <div class="column">Add To Cart</div>
+          </div>
+          <div class="col-md-3">
+              <img src="/images/purchase2.jpg" alt="Purchase-2" id ="purchase-2">
+              <div class="column"><h3>Column 1</h3></div>
+              <div class="column">Column 2</div>
+              <div class="column">Add To Cart</div> 
+          </div>
+          <div class="col-md-3">
+            <img src="/images/purchase3.jpg" alt="Purchase-3" id ="purchase-3">
+            <div class="column">Column 1</div>
+  <div class="column">Column 2</div>
+  <div class="column">Add To Cart</div>
+          </div>
+          <div class="col-md-3">
+            <img src="/images/purchase4.jpg" alt="Purcase-4" id ="purchase-4">
+            <div class="column">Column 1</div>
+  <div class="column">Column 2</div>
+  <div class="column">Add To Cart</div>
+          </div>
+      </div>
+  </div>
+</section>
+<section id="review" class="review-section">
+  <div class="container">
+      <h1>REVIEW CLIENT</h1>
+      <div id="rectangle"></div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>
+        Voluptates, vero id. Perferendis.</p>
+  <div class="container section-content">
+    <div class="row">
+        <div class="col-md-6">
+          <div class="row">
+            <div class="column">
+              <img src="/images/client1.jpg" alt="Client-1" id ="client-1">
+            </div>
+            <div class="column">
+            <div><b>Diet Expert</b></div>
+            <div>CFO</div>
+            </div>
+          <div class="column">
+          </div>
+          <div class="column">
+          </div>
+          <div class="column">
+          </div>
+          <div class="column">
+          </div>
+          </div>
+          <div id="blue-rectangle">
+            <div class="text-container">
+            <p2>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Voluptates, vero id. Perferendis. Lorem ipsum dolor sit amet,
+              consectetur adipisicing elit. Voluptates, vero id. Perferendis.
+              Lorem ipsum dolor sit amet,
+              consectetur adipisicing elit.
+            </p2>
+            </div>
+            <div class="triangle-container">
+            <div id="triangle-topright"></div>
+            <div id="triangle-topleft"></div>
+          </div>
+        </div>
+        </div>
+        <div class="col-md-6">
+          <div class="row">
+            <div class="column">
+              <img src="/images/client2.jpg" alt="Client-2" id ="client-2">
+            </div>
+            <div class="column">
+            <div><b>Trainer</b></div>
+            <div>CEO</div>
+            </div>
+          <div class="column">
+          </div>
+          <div class="column">
+          </div>
+          <div class="column">
+          </div>
+          <div class="column">
+          </div>
+          </div>
+          <div id="blue-rectangle">
+            <div class="text-container">
+            <p2>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Voluptates, vero id. Perferendis. Lorem ipsum dolor sit amet,
+              consectetur adipisicing elit. Voluptates, vero id. Perferendis.
+              Lorem ipsum dolor sit amet,
+              consectetur adipisicing elit.
+            </p2>
+            </div>
+            <div class="triangle-container">
+            <div id="triangle-topright"></div>
+            <div id="triangle-topleft"></div>
+          </div>
+          </div>
+        </div>
+</div>
+</section>
+<section id="contactus" class="contactus-section">
+  <div class="container">
+      <h1>CONTACT US</h1>
+      <div id="rectangle"></div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>
+        Voluptates, vero id. Perferendis.</p>
+  <div class="container section-content">
+    <div class="row">
+      <div class="col-md-6">
+      <div class="container"></div>
+      <div class="row">
+      <div class="column">
+      <div><h4>Mobile Number&nbsp;&nbsp;&nbsp;&nbsp;Email Address</h4></div>
+      <div><h5>+123 456 78 90&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;demo@demo.com</h5></div>
+      </div>
+      </div>
+      <div><h2>Make An Appointment</h2></div>
+        <div class="form-container">
+          <div class="input-row">
+            <label for="name"></label>
+            <input type="text" id="name" name="name" placeholder=" Your Name">
+          </div>
+          <div class="input-row">
+            <label for="email"></label>
+            <input type="email" id="email" name="email" placeholder=" Your Email">
+          </div>
+          <div class="input-row">
+            <label for="message"></label>
+            <textarea id="message" name="message" rows="4" placeholder=" Your Message"></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <iframe id="map"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3007.693154049199!2d29.0350732763108!3d41.07569947134111!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab7f6fb5e507b%3A0x6edfa34099cb9985!2sClubhouse%20Bebek!5e0!3m2!1str!2str!4v1714125142507!5m2!1str!2str" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+</section>
+<footer>
+    <div class="footer-content">
+      <div class="logo">
+        <img src="/images/logo.png" alt="Powerfull Logo">
+        <div>
+          <p style="color:white;font-weight: 400; margin-bottom: 25px;">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, vero id. Perferendis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, vero id. Perferendis. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          </p>
+          <div style="display:flex; justify-content: center;">
+            <div style="flex:1; text-align: center; display: flex; flex-direction: column; align-items: center;">
+              <h3 style="color:white;margin-bottom: 10px;">Information</h3>
+              <ul style="color:white;font-weight: 300; padding-inline-start: 0; list-style: none;">
+                <li>About Us</li>
+                <li>Classes</li>
+                <li>Blog</li>
+                <li>Contact</li>
+              </ul>
+            </div>
+            <div style="flex:1; text-align: center; display: flex; flex-direction: column; align-items: center;">
+              <h3 style="color:white;margin-bottom: 10px;">Helpful Links</h3>
+              <ul style="color:white;font-weight: 300;padding-inline-start: 0; list-style: none;">
+                <li>Services</li>
+                <li>Supports</li>
+                <li>Terms & Conditions</li>
+                <li>Privacy Policy</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>  
+</footer>
+
+    <script src="vendor/aos/aos.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

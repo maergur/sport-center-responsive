@@ -1,0 +1,17 @@
+@import './vendor.css';
+@import './common.css';
+
+@import './layouts/header.css';
+@import './layouts/footer.css';
+
+@import './sections/hero.css';
+@import './sections/hero-mid.css';
+@import './sections/class.css';
+@import './rectangle.css';
+@import './sections/bim.css';
+@import './sections/trainers.css';
+@import './sections/purchase.css';
+@import './sections/review.css';
+@import './sections/contactus.css';
+
+@import './map.css';

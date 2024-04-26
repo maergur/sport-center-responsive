@@ -1,0 +1,100 @@
+.class-section {
+    background: linear-gradient(70deg, white 50%, #f8f4f4 50%);    
+    padding: 110px 0; 
+    text-align: center;
+}
+
+.class-section .container {
+    position: relative; 
+    text-align: left;
+    padding-left: 150px;
+    padding-right: 150px;
+    z-index: 1;
+    
+}
+
+.class-section .container .button-container{
+    position: relative; 
+    text-align: center;
+    z-index: 1;
+}
+
+.class-section h1 {
+    font-size: 1.5em;
+    text-align: center; 
+    color: #355592;
+    font-weight: 850;
+    margin-top: 0px;
+    margin-bottom: auto;
+    
+    
+}
+.class-section h2 {
+    text-align: left;
+    font-size: 18px;
+    color:black;
+    font-weight: 850;
+    margin-bottom: 25px;
+    margin-top: 10px;
+   
+}
+
+.class-section p {
+    font-size:  large;
+    color: black;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    font-weight: 500;
+    
+}
+
+.class-section p2 {
+    font-size:  12 px;
+    color: black;
+    text-align: left;
+    font-weight: 500;
+    
+}
+.class-section .btn-orange {
+    font-size: 1.2em; 
+    font-weight: 700;
+    margin: 50px 75px;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-radius: 5px; 
+    border-color: orange;
+    text-decoration: none;
+    background-color: orange;
+    transition: background-color 0.3s ease; 
+}
+
+.class-section .btn {
+    font-size: 1.2em; 
+    font-weight: 700;
+    margin: 50px 75px;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-radius: 5px; 
+    border-color: #355592;
+    text-decoration: none;
+    background-color: #355592;
+    transition: background-color 0.3s ease; 
+}
+.class-section .btn:hover {
+    background-color: #355592;
+}
+
+.class-section .container .section-content {
+    padding: 100px 0px;
+
+}
+
+.center {
+    display: block;
+    margin: auto;
+}
+
+
+

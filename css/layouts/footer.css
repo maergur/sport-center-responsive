@@ -1,0 +1,17 @@
+footer {
+    background-color: #355592;
+    padding: 20px 0; /* Add padding to the footer */
+  }
+  
+  .footer-content {
+    max-width: 1050px; /* Set maximum width for the footer content */
+    margin: 0 auto; /* Center the footer content */
+    align-items: center; /* Vertically center items */
+  }
+  
+  .logo img {
+    max-width: 175px;
+  }
+ 
+  
+  

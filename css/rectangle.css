@@ -1,0 +1,38 @@
+#rectangle{
+    width:60px;
+    height:6px;
+    background-color:orange;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    margin-bottom: 45px;
+}
+
+#blue-rectangle{
+    width: 515px;
+    height:130px;
+    background-color:#355592;
+    margin-top: 15px;
+    margin-bottom: 45px;
+    z-index: 2;
+}
+
+#triangle-topleft {
+    margin-top: 6.5px;
+    width: 0;
+    height: 0;
+    border-top: 25px solid #7e96bf;
+    border-right: 25px solid transparent;
+    float: right;
+    z-index: 1;
+  }
+
+  #triangle-topright {
+    margin-top: 6.5px;
+    width: 0;
+    height: 0;
+    border-top: 25px solid #7e96bf;
+    border-left: 25px solid transparent;
+    z-index: 1;
+  }
