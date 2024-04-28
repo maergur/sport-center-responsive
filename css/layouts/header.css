@@ -42,3 +42,39 @@ cursor: pointer;
     border-radius: 10px;
     
 }
+
+/* Hamburger Menu Styles */
+
+.hamburger-menu {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.hamburger-menu__bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px auto;
+}
+
+/* Responsive Styles */
+
+@media (max-width: 576px) {
+    .hamburger-menu {
+        display: block;
+    }
+
+    #navbar ul {
+        display: none;
+    }
+
+    #navbar ul.active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

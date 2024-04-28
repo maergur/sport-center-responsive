@@ -96,6 +96,12 @@ function calculateBMI() {
         }
     }}
 
+    /* This is the function used to toggle hamburger menu when the screen size is 576 px or lower*/
+
+    document.querySelector('.hamburger-menu').addEventListener('click', function() {
+        document.querySelector('#navbar ul').classList.toggle('active');
+    });
+
 
     
 
