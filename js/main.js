@@ -1,6 +1,10 @@
 window.addEventListener('scroll', function() {
     var header = document.getElementById('header');
-    header.classList.toggle('scrolled', window.scrollY > 0);
+    if (window.scrollY > 0) {
+        header.style.backgroundColor = "#355592";
+    } else {
+        header.style.backgroundColor = "transparent";
+    }
 });
 function groupImage() {
     resetColor();
@@ -52,7 +56,6 @@ function resetColor() {
 
 
 }
-
 
 function calculateBMI() {
     var weight = parseFloat(document.getElementById('weight').value);

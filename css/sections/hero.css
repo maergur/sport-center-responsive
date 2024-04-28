@@ -78,10 +78,10 @@
 .box {
     background-color: white;
     color:#355592;
-    padding: 20px; /* Padding */
-    text-align: center; /* Text alignment */
-    font-size: 18px; /* Font size */
-    border-radius: 10px; /* Border radius */
+    padding: 20px; 
+    text-align: center; 
+    font-size: 18px; 
+    border-radius: 10px; 
 }
 
 
