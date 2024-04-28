@@ -1,3 +1,6 @@
+/* This is the function used to turn the transparent header to colored when scrolled. */
+
+
 window.addEventListener('scroll', function() {
     var header = document.getElementById('header');
     if (window.scrollY > 0) {
@@ -6,6 +9,11 @@ window.addEventListener('scroll', function() {
         header.style.backgroundColor = "transparent";
     }
 });
+
+/* Below functions are used to change the color of the buttons to orange when clicked
+
+Here, I used resetColor() function to make sure everything is reseted, before changing their color. */
+
 function groupImage() {
     resetColor();
     var currentImage = document.getElementById('currentImg');
@@ -57,6 +65,8 @@ function resetColor() {
 
 }
 
+/* This is the function used to calculate BMI*/
+
 function calculateBMI() {
     var weight = parseFloat(document.getElementById('weight').value);
     var height = parseFloat(document.getElementById('height').value);
@@ -85,3 +95,8 @@ function calculateBMI() {
             triangle.style.marginLeft = "425px"
         }
     }}
+
+
+    
+
+    
