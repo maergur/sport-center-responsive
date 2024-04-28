@@ -1,5 +1,6 @@
 #header {
     height: 80px;
+    max-width: auto;
     background: transparent;
 }
 
@@ -8,6 +9,7 @@
     display: flex;
     align-items: center;
     justify-content:space-evenly;
+    width: auto;
     margin-top: 10px;
 }
 
@@ -50,26 +52,38 @@ cursor: pointer;
     background: none;
     border: none;
     cursor: pointer;
-    padding: 10px;
+    
 }
 
-.hamburger-menu__bar {
-    display: block;
-    width: 25px;
-    height: 3px;
-    background-color: white;
-    margin: 5px auto;
+.fa-bars {
+    font-size: 24px; /* Adjust as needed */
+    color: white;
 }
 
 /* Responsive Styles */
 
 @media (max-width: 576px) {
+
+    
     .hamburger-menu {
-        display: block;
+        display:block;
+        
     }
+
+    #header .container {
+        margin-left: 60px;
+        
+    }    
 
     #navbar ul {
         display: none;
+        position: absolute;
+        top: 60px; 
+        right: 80px;
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+        z-index: 999; 
     }
 
     #navbar ul.active {
@@ -78,3 +92,5 @@ cursor: pointer;
         align-items: center;
     }
 }
+
+
