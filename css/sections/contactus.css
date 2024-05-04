@@ -165,6 +165,23 @@
   textarea {
     resize: vertical; 
   }
+
+  @media (max-width: 576px) {
+    .contactus-section {
+      padding: 50px 0; 
+      
+    }
+    .contactus-section .container {
+      padding: 0px 5px;
+      padding-top: 25px;
+    }
+
+    .contactus-section .container .section-content {
+        padding: 25px 0px;
+    
+    }
+
+}
   
 
 

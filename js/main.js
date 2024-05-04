@@ -96,11 +96,15 @@ function calculateBMI() {
         }
     }}
 
-    /* This is the function used to toggle hamburger menu when the screen size is 576 px or lower*/
+    // Change header color when menu is open
 
-    document.querySelector('.hamburger-menu').addEventListener('click', function() {
-        document.querySelector('#navbar ul').classList.toggle('active');
+    document.getElementById('menu-toggle').addEventListener('change', function() {
+        var header = document.getElementById('header');
+        if (this.checked) {
+            header.style.backgroundColor ="#355592";
+        } 
     });
+
 
 
     

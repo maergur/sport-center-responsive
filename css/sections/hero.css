@@ -1,3 +1,4 @@
+/* Default styles for larger screens */
 .hero-section {
     background-image:url(/images/hero-man.jpg); 
     background-size: cover;
@@ -11,8 +12,7 @@
     text-align: left;
     padding-left: 185px;
     padding-right: 185px;
-    z-index: 1;
-    
+    z-index: 1;  
 }
 
 .hero-section h1 {
@@ -20,9 +20,7 @@
     font-weight: 850;
     text-shadow: 2px 2px black;
     margin-top: 0px;
-    margin-bottom: auto;
-    
-    
+    margin-bottom: auto;   
 }
 
 .hero-section p {
@@ -32,8 +30,7 @@
     padding-left: 10px;
     font-weight: 500;
     background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 2px; 
-    
+    border-radius: 2px;   
 }
 
 .hero-section .btn {
@@ -48,6 +45,19 @@
     background-color: #355592;
     transition: background-color 0.3s ease; 
 }
+.hero-section .btn-below {
+    font-size: 1.2em; 
+    font-weight: 700;
+    padding: 3px 15px; 
+    margin-right: 30px;
+    margin-left: 5px;
+    border-radius: 5px; 
+    border-color: #355592;
+    text-decoration: none;
+    background-color: #355592;
+    transition: background-color 0.3s ease; 
+}
+
 .hero-section .top-btn {
     font-size: 1.2em; 
     font-weight: 700;
@@ -60,6 +70,7 @@
     background-color: #355592;
     transition: background-color 0.3s ease; 
 }
+
 .hero-section .secondary-btn {
     font-size: 1.2em; 
     font-weight: 700;
@@ -84,5 +95,42 @@
     border-radius: 10px; 
 }
 
+/* Media query for screens with a maximum width of 576px */
 
-
+@media (max-width: 576px) {
+    .hero-section {
+      padding: 50px 0; 
+      
+    }
+    .hero-section .container {
+      padding: 0px 5px;
+      padding-top: 100px;
+    }
+  
+    .hero-section .btn-below {
+      display: block;
+      width: 100%;
+      margin: 10px 0; 
+      text-align: left;
+    }
+    .responsive-heading {
+      display: none; /
+  }
+  .hero-section .container:before {
+      content: "Group Practice";
+      display: block;
+      font-size: 4em; 
+      font-weight: 850;
+      text-shadow: 2px 2px black;
+      margin-top: 0px;
+      margin-bottom: auto;   
+      
+  }
+  .top-btn {
+      position: absolute;
+      top: 80px; 
+      text-align: left;
+      z-index: 2; 
+  }
+  }
+  

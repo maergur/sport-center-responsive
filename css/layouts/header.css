@@ -4,18 +4,17 @@
     background: transparent;
 }
 
+#header .menu-open {
+    background-color: #355592; 
+}
 
 #header .container {
     display: flex;
     align-items: center;
     justify-content:space-evenly;
-    width: auto;
     margin-top: 10px;
 }
 
-#header .logo img {
-    display: block;
-}
 
 #navbar ul {
     margin: 0;
@@ -31,7 +30,7 @@
 }
 
 
-#navbar li a{
+.menu li a{
 font-size: 16px;
 color: white;
 font-weight: 600;
@@ -41,56 +40,135 @@ cursor: pointer;
 
 .nav-item-join{
     background-color: orange;
-    border-radius: 10px;
-    
+    padding-inline: 10px;
+    border-radius: 5px;    
 }
+ 
 
-/* Hamburger Menu Styles */
-
-.hamburger-menu {
+.menu {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu > li {
+    margin: 0 1rem;
+    overflow: hidden;
+  }
+  
+  .menu-button-container {
     display: none;
-    background: none;
-    border: none;
+    height: 100%;
+    width: 30px;
     cursor: pointer;
-    
-}
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #menu-toggle {
+    display: none;
+  }
+  
+  .menu-button,
+  .menu-button::before,
+  .menu-button::after {
+    display: block;
+    background-color: #fff;
+    position: absolute;
+    height: 4px;
+    width: 30px;
+    transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    border-radius: 2px;
+  }
+  
+  .menu-button::before {
+    content: '';
+    margin-top: -8px;
+  }
+  
+  .menu-button::after {
+    content: '';
+    margin-top: 8px;
+  }
+  
+  #menu-toggle:checked + .menu-button-container .menu-button::before {
+    margin-top: 0px;
+    transform: rotate(405deg);
+  }
+  
+  #menu-toggle:checked + .menu-button-container .menu-button {
+    background: rgba(255, 255, 255, 0);
+  }
+  
+  #menu-toggle:checked + .menu-button-container .menu-button::after {
+    margin-top: 0px;
+    transform: rotate(-405deg);
+  }
+  
+  @media (max-width: 576px) {
 
-.fa-bars {
-    font-size: 24px; /* Adjust as needed */
-    color: white;
-}
+    .menu-button-container {
+      display: flex;
+    }
+    .menu {
+      position: absolute;
+      top: 0;
+      margin-top: 80px;
+      left: 0;
+      flex-direction: column;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+    }
+    #menu-toggle ~ .menu li {
+      height: 0;
+      margin: 0;
+      padding: 0;
+      border: 0;
+      transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
 
-/* Responsive Styles */
-
-@media (max-width: 576px) {
-
-    
-    .hamburger-menu {
-        display:block;
+    #menu-toggle:checked ~ .menu li {
         
+    height: 2.5em;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
     }
 
-    #header .container {
-        margin-left: 60px;
-        
-    }    
+    .menu > li {
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 0.5em 0;
+      width: 100%;
+      color: white;
+      background-color:  #355592;
 
-    #navbar ul {
-        display: none;
-        position: absolute;
-        top: 60px; 
-        right: 80px;
-        width: 100%;
-        padding: 10px;
-        box-sizing: border-box;
-        z-index: 999; 
+
+    
+    }
+    .menu .nav-item-join {
+        background-color: orange;
+        border-radius: 0px;
+    }
+    .menu > li:not(:last-child) {
+      border-bottom: 1px solid #444;
     }
 
-    #navbar ul.active {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+     .logo {
+        margin-right: auto; 
+       
     }
-}
+
+    .menu-button-container {
+        margin-left: auto; 
+    }
+
+  }
+
+
+
 
 

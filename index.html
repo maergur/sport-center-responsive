@@ -18,11 +18,11 @@
         <div class="logo">
             <img src="images/logo.png" alt="Sport Center Logo">
         </div>
-        <button class="hamburger-menu" onclick="toggleMenu()">
-          <i class="fa-solid fa-bars"></i>
-        </button>
-        <nav id="navbar" class="navbar">
-            <ul class="navbar-nav">
+        <input id="menu-toggle" type="checkbox" />
+        <label class='menu-button-container' for="menu-toggle">
+        <div class='menu-button'></div>
+        </label>
+            <ul class="menu">
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="#hero">Home</a>
                 </li>
@@ -42,21 +42,20 @@
                     <a class="nav-link" href="#">JOIN US</a>
                 </li>
             </ul>
-        </nav>
     </div>
 </header>
 
       <section id="hero" class="hero-section">
         <div class="container">
           <a href="#section1" class="btn btn-primary top-btn">POWERFULL</a>
-            <h1>Group</h1>
-            <h1>Practice</h1>
+          <h1 class="responsive-heading">Group</h1>
+          <h1 class="responsive-heading">Practice</h1>
             <h1>With Trainer</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
               Necessitatibus odit aut iste. Velit porro rerum, unde modi ipsam exercitationem laudantium illum. 
               Id, laborum? Totam, dicta nisi. Voluptates, vero id. Perferendis.</p>
-            <a href="#section1" class="btn btn-primary">Sign Up</a>
-            <a href="#section1" class="btn btn-primary secondary-btn">Details</a>
+            <a href="#section1" class="btn btn-primary btn-below">Sign Up</a>
+            <a href="#section1" class="btn btn-primary secondary-btn btn-below">Details</a>
         </div>
       </section>
       <div id ="hero-mid" class="hero-mid-container">
@@ -75,11 +74,11 @@
             </div>
             <div class="col-md-3 mb-3">
                 <div class="box">
-                  305<br>Working Hours</div>
+                  305<br><span style="color: black;">Working Hours</span></div>
             </div>
             <div class="col-md-3 mb-3">
                 <div class="box">
-                  705<br>Happy Clients</div>
+                  705<br><span style="color: black;">Clients</span></div>
             </div>
         </div>
     </div>  
@@ -149,7 +148,7 @@
                 <div class="triangle" id="triangle"></div>
                 <div class="result" id="bmiResult"></div>
             </div>
-            
+
         </div>
     </div>
     <section id="trainers" class="trainer-section">

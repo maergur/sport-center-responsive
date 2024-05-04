@@ -23,3 +23,15 @@
 .box .line2 {
     color: black; 
 }
+
+@media (max-width: 576px) {
+    .hero-mid-container {
+      padding: 25px 75px; 
+    }
+
+    .box {
+
+        margin: 15px 75px;
+    }
+ 
+}
