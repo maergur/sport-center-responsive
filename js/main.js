@@ -1,6 +1,5 @@
 /* This is the function used to turn the transparent header to colored when scrolled. */
 
-
 window.addEventListener('scroll', function() {
     var header = document.getElementById('header');
     if (window.scrollY > 0) {
@@ -65,7 +64,7 @@ function resetColor() {
 
 }
 
-/* This is the function used to calculate BMI*/
+/* This is the function used to calculate BMI */
 
 function calculateBMI() {
     var weight = parseFloat(document.getElementById('weight').value);

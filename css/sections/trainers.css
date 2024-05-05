@@ -82,9 +82,6 @@
     background-color: #355592;
     transition: background-color 0.3s ease; 
 }
-.trainer-section .btn:hover {
-    background-color: #355592;
-}
 
 .trainer-section .container .section-content {
     padding: 75px 0px;
@@ -92,14 +89,17 @@
 }
 
 .image-container {
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-right: 0px;
     position: relative;
     overflow: hidden;
 }
 
 .plus-sign {
     position: absolute;
-    bottom: 0; 
-    left: 47.5%;
+    bottom: 2.5%; 
+    left: 50%;
     transform: translateX(-50%);
     width: 270px; 
     height: 120px; 
@@ -137,11 +137,64 @@
     color: #fff;
 }
 
+.trainer-section img{
+    margin-left: 9px;
+}
 
 .image-container:hover .plus-sign {
     opacity: 1;
 }
 
+
+.wrapper-rectangle {
+    position: absolute;
+    background-color: #355592; 
+  }
+   .top, .bottom {
+    width: calc(100% - 66.66%);
+    height: 3%; 
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .left, .right {
+    width: 3%; 
+    height: calc(100% - 66.66%); 
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .top {
+    top: 0;
+  }
+  
+  .bottom {
+    bottom: 0;
+  }
+  
+  .left {
+    left: 0;
+  }
+  
+  .right {
+    right: 0;
+  }
+
+  .image-container:hover .bottom{
+    width: calc(100% - 33.33%);
+    
+}
+
+.image-container:hover .right{
+    height: calc(100% - 45%);
+    top: 60%;
+}
+
+.image-container:hover .left{
+    height: calc(100% - 45%);
+    top:60%;
+}
+  
 @media (max-width: 576px) {
     .trainer-section {
       padding: 50px 0; 
@@ -157,13 +210,28 @@
     }
 
     .plus-sign {
-        margin-left: 12px;
+        margin-left: 5px;
     }
 
     .trainer-section .container .section-content {
         padding: 0px 0px;
         padding-top: 75px;
     
+    }
+
+    .left {
+        width: 2%; 
+        left: 106px;
+    }
+
+    .right {
+        width: 2%; 
+        right:97px;
+    }
+
+    .image-container:hover .bottom{
+        width: calc(100% - 50%);
+        
     }
 }
 
