@@ -8,8 +8,8 @@
 
 ## :technologist:	Technologies Used
 
-- Java
-- SprintBoot
-- PostgreSQL
+- JavaScript
+- CSS
+- HTML
   
 Netlify Link: https://mae-sportscenter-project.netlify.app/
